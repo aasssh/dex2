@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class q18{
+	public static void main(String args[]){
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter the number to check if it's a palindrome number or not:");
+		int num = input.nextInt();
+		int sum=0,temp = num;
+		
+		while(num>0){
+			int reminder = num%10;
+			sum = sum*10 + reminder;
+			num = num/10;
+		}
+		if(temp==sum)
+			System.out.println("The given number "+temp+" is a palindrome number\n");
+		else
+			System.out.println("The given number "+temp+" is not a palindrome number\n");
+	}
+}
+
+

@@ -1,0 +1,12 @@
+import java.util.Scanner;
+class q4{
+	public static void main (String args[]){
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter the length of the square in centimeters:");
+		int l = input.nextInt();
+		int area = l*l;
+		int perimeter = 4*l;
+		System.out.println("The area of the square is :\t"+area+"\nThe perimeter of the square is :\t"+perimeter);
+	}
+}
+

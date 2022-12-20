@@ -1,0 +1,15 @@
+import java.util.*;
+public class q23{
+	static int cube(int a){
+		return a*a*a;
+	}
+
+	public static void main(String args[]){
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter the integer to get it's cube:");
+		int n = input.nextInt();
+		System.out.println("The cube of the given number "+n+" is = "+cube(n));
+	}
+}
+
+

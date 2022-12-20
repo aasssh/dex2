@@ -1,0 +1,19 @@
+import java.util.Scanner;
+class q11{
+	public static void main(String args[]){
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter the number to get it's reversed number:");
+		int num = input.nextInt();
+		System.out.println("The reverse of the given in input number "+num+" is: ");
+		int reverse = 0;
+		while(num!=0){
+			int reminder = num%10;
+			reverse = reverse * 10 + reminder;
+			num = num/10;
+		}
+		System.out.print(reverse);
+	}
+}
+
+		 
+

@@ -1,0 +1,32 @@
+import java.util.*;
+class q22{
+	public static void main(String args[]){
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter the total number of elements to insert in the array:");
+		int n = input.nextInt();
+		int i,j,temp=0;
+		int arr[] = new int[n];
+		for(i=0;i<n;i++){
+			System.out.println("Enter the element to insert into the array in the index ["+i+"]:");
+			arr[i] = input.nextInt();
+		}
+		System.out.println("The current input array is:");
+		for(i=0;i<n;i++){
+			System.out.print(arr[i]+"\t");
+		}
+		for(i=0;i<n;i++){
+			for(j=1;j<(n-i);j++){
+				if(arr[j-1] > arr[j]){
+					temp = arr[j-1];
+					arr[j-1] = arr[j];
+					arr[j] = temp;
+				}
+			}
+		}
+		System.out.println("\n\nThe largest element in the array is : "+arr[n-1]);
+	}
+}
+
+
+
+

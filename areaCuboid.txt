@@ -1,0 +1,15 @@
+import java.util.Scanner;
+class q15{
+	public static void main(String args[]){
+		double l,b,h;
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter the length,breath and height of the cuboid:");
+		l = input.nextDouble();
+		b = input.nextDouble();
+		h = input.nextDouble();
+		double surArea = 2*(l*b + b*h + l*h);
+		System.out.println("The surface area of the cuboid is :"+surArea);
+	}
+}
+
+

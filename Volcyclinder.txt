@@ -1,0 +1,15 @@
+import java.util.Scanner;
+class q14{
+	public static void main(String args[]){
+		Scanner input = new Scanner(System.in);
+		double h,r,pie=3.14,volume;
+		System.out.println("Enter the radius of the cylinder:");
+		r = input.nextDouble();
+		System.out.println("Enter the height of the cylinder:");
+		h = input.nextInt();
+		volume = pie*r*r*h;
+		System.out.println("The volume of the cylinder is : "+volume);
+	}
+}
+
+
